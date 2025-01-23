@@ -3,6 +3,7 @@
 *Streamline appointments, doctor schedules, patient records, and admin tasks in one platform!*  
 
 ---
+
 ## 📌 Project Description
 
 ### **What is the Clinic Management System?**
@@ -18,6 +19,24 @@ Built for **Windows, macOS, and Linux**, it empowers clinics to:
 ✅ Eliminate double-booking errors  
 ✅ Improve patient satisfaction with digital services  
 ✅ Maintain HIPAA-compliant record-keeping  
+
+---
+
+## 🖥️ System Requirements
+
+### **⚙️ Functional Requirements**
+- 🛡️ Patients, doctors, and admins can log in securely.
+- 🕒 Automated queue assignment for appointments.
+- 📅 Daily appointment limits for doctors (configurable by admins).
+- ✔️ Data validation for registrations, appointments, and reports.
+
+### **🛠️ Non-Functional Requirements**
+- **Reliability**: 99.9% uptime with robust error handling and transaction management.
+- **Scalability**: Efficient database queries and modular architecture to handle growing user numbers.
+- **🔒 Security**: Password hashing (SHA-256) and role-based access control.
+- **⚡ Performance**: Pages load and actions process within 0.01 seconds.
+- **🔄 Backup**: Daily backups to Google Drive or secondary servers.
+- **👩‍💻 Usability**: Intuitive desktop interface for users with basic technical skills.
 
 ---
 
@@ -53,7 +72,6 @@ Built for **Windows, macOS, and Linux**, it empowers clinics to:
 
 ---
 
-
 ## 🌟 Features  
 ### **User Roles & Capabilities**  
 
@@ -75,6 +93,7 @@ Built for **Windows, macOS, and Linux**, it empowers clinics to:
 | **Tools**      | Scene Builder, IntelliJ/Eclipse, Maven |    
 
 ---
+
 ## 🔌 API Endpoints
 
 | Method | Endpoint              | Description                |
@@ -84,6 +103,7 @@ Built for **Windows, macOS, and Linux**, it empowers clinics to:
 | PUT    | /api/reports/{id}     | Update medical report      |
 
 ---
+
 ## 🚀 Getting Started  
 
 ### 📋 **Prerequisites**  
@@ -120,6 +140,39 @@ DB_URL=jdbc:mysql://localhost:3306/clinic_management
 DB_USERNAME=your_db_username
 DB_PASSWORD=your_db_password
 ```
+
+---
+### 🌟 Key Features
+
+#### For Patients
+- 📝 **Registration**: Create an account with personal details (name, email, phone, age, gender, password).
+- 🔑 **Login**: Secure access using email and password.
+- 👀 **View Specialties**: Browse available medical specialties.
+- 🗓️ **Book Appointments**: Select a specialty, doctor, and available day to book an appointment. Receive an automated queue number.
+- 📅 **Appointment History**: View past appointments.
+- 🕒 **View Doctor Availability**: Check doctors’ schedules and specialties.
+
+#### For Doctors
+- 🔑 **Login**: Access the system with credentials.
+- 🗓️ **View Schedule**: Check available days and appointments.
+- 📄 **Manage Reports**: Submit reports for appointments and mark them as "Completed".
+- 📚 **Patient Report History**: Review historical reports for patients.
+
+#### For Admins
+- 👥 **User Management**: Add, edit, or remove doctors and specialties.
+- 🗓️ **Appointment Management**: Add, delete, or edit appointments. Set daily appointment limits per doctor.
+- ⚙️ **System Configuration**: Schedule backups, manage data integrity, and ensure uptime (99.9% SLA).
+- 📊 **Reports**: Monitor system performance and user activities.
+
+#### View Appointment History
+- **Filter Options**:
+  - By date range (Last 7/30 days)
+  - By status (Upcoming/Completed)
+- **Export Reports**:
+  - Reports include doctor notes and diagnosis
+
+---
+
 ## 🖥️ Usage Guide
 
 ### 👨💼 Admin Workflow
@@ -143,42 +196,36 @@ DB_PASSWORD=your_db_password
 
 ---
 
-🌟 Key Features
-For Patients
-📝 Registration: Create an account with personal details (name, email, phone, age, gender, password).
+### 👩⚕️ Doctor Workflow
 
-🔑 Login: Secure access using email and password.
+#### View Daily Schedule
+1. From dashboard, check **Today's Appointments** section
+2. View patient queue numbers in chronological order
+3. Click `Mark Complete` after consultation
 
-👀 View Specialties: Browse available medical specialties.
+#### Create Medical Reports
+1. Select appointment from **Pending Reports** list
+2. Fill diagnosis details in report form
+3. Click `Submit Report` to:
+   - Save report to database
+   - Update appointment status to Completed
+   - Trigger email notification to patient
 
-🗓️ Book Appointments: Select a specialty, doctor, and available day to book an appointment. Receive an automated queue number.
+---
 
-📅 Appointment History: View past appointments.
+### 👤 Patient Workflow
 
-🕒 View Doctor Availability: Check doctors’ schedules and specialties.
-
-For Doctors
-🔑 Login: Access the system with credentials.
-
-🗓️ View Schedule: Check available days and appointments.
-
-📄 Manage Reports: Submit reports for appointments and mark them as "Completed".
-
-📚 Patient Report History: Review historical reports for patients.
-
-For Admins
-👥 User Management: Add, edit, or remove doctors and specialties.
-
-🗓️ Appointment Management: Add, delete, or edit appointments. Set daily appointment limits per doctor.
-
-⚙️ System Configuration: Schedule backups, manage data integrity, and ensure uptime (99.9% SLA).
-
-📊 Reports: Monitor system performance and user activities.
+#### Book Appointment
+1. **Select Specialty** (e.g., Cardiology, Pediatrics)
+2. **Choose Doctor** from available specialists
+3. **Pick Available Day** from doctor's schedule
+4. System automatically assigns queue number
+5. Receive confirmation email with details
 
 #### View Appointment History
 - **Filter Options**:
   - By date range (Last 7/30 days)
   - By status (Upcoming/Completed)
 - **Export Reports**:
+  - Click `Download PDF` next to completed appointments
   - Reports include doctor notes and diagnosis
-
