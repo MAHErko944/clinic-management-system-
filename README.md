@@ -124,6 +124,5 @@ DB_PASSWORD=your_db_password
   - By date range (Last 7/30 days)
   - By status (Upcoming/Completed)
 - **Export Reports**:
-  - Click `Download PDF` next to completed appointments
   - Reports include doctor notes and diagnosis
 
