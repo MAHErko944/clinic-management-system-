@@ -143,31 +143,37 @@ DB_PASSWORD=your_db_password
 
 ---
 
-### 👩⚕️ Doctor Workflow
+🌟 Key Features
+For Patients
+📝 Registration: Create an account with personal details (name, email, phone, age, gender, password).
 
-#### View Daily Schedule
-1. From dashboard, check **Today's Appointments** section
-2. View patient queue numbers in chronological order
-3. Click `Mark Complete` after consultation
+🔑 Login: Secure access using email and password.
 
-#### Create Medical Reports
-1. Select appointment from **Pending Reports** list
-2. Fill diagnosis details in report form
-3. Click `Submit Report` to:
-   - Save report to database
-   - Update appointment status to Completed
-   - Trigger email notification to patient
+👀 View Specialties: Browse available medical specialties.
 
----
+🗓️ Book Appointments: Select a specialty, doctor, and available day to book an appointment. Receive an automated queue number.
 
-### 👤 Patient Workflow
+📅 Appointment History: View past appointments.
 
-#### Book Appointment
-1. **Select Specialty** (e.g., Cardiology, Pediatrics)
-2. **Choose Doctor** from available specialists
-3. **Pick Available Day** from doctor's schedule
-4. System automatically assigns queue number
-5. Receive confirmation email with details
+🕒 View Doctor Availability: Check doctors’ schedules and specialties.
+
+For Doctors
+🔑 Login: Access the system with credentials.
+
+🗓️ View Schedule: Check available days and appointments.
+
+📄 Manage Reports: Submit reports for appointments and mark them as "Completed".
+
+📚 Patient Report History: Review historical reports for patients.
+
+For Admins
+👥 User Management: Add, edit, or remove doctors and specialties.
+
+🗓️ Appointment Management: Add, delete, or edit appointments. Set daily appointment limits per doctor.
+
+⚙️ System Configuration: Schedule backups, manage data integrity, and ensure uptime (99.9% SLA).
+
+📊 Reports: Monitor system performance and user activities.
 
 #### View Appointment History
 - **Filter Options**:
