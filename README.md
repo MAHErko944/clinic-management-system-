@@ -54,3 +54,11 @@ clinic-management-system/
 └── pom.xml                       # Maven dependencies  
 
 
+## 🛠️ Configure Environment
+
+**Create .env file:
+properties
+Copy
+**DB_URL="jdbc:mysql://localhost:3306/clinic_management"
+**DB_USERNAME=""
+**DB_PASSWORD=""
