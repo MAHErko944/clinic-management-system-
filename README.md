@@ -41,7 +41,6 @@ Built for **Windows, macOS, and Linux**, it empowers clinics to:
 #### **2. Patient Management**  
 🔹 **Digital Profiles**: Store medical history, allergies, and prescriptions  
 🔹 **Self-Service Portal**: Patients can book/cancel appointments without clinic calls  
-🔹 **Reminder System**: Email/SMS alerts for upcoming appointments  
 
 #### **3. Doctor Workflow Tools**  
 🔹 **Daily Dashboard**: Prioritized patient queue with critical case flags  
@@ -51,8 +50,10 @@ Built for **Windows, macOS, and Linux**, it empowers clinics to:
 #### **4. Administrative Control**  
 🔹 **Role-Based Access**: Granular permissions (Admin/Doctor/Patient)  
 🔹 **Audit Logs**: Track all system changes (who, what, when)  
-🔹 **Data Export**: Generate CSV/PDF reports for compliance or analysis  
+
 ---
+
+
 ## 🌟 Features  
 ### **User Roles & Capabilities**  
 
