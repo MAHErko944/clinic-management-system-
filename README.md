@@ -56,9 +56,8 @@ clinic-management-system/
 
 ## 🛠️ Configure Environment
 
-**Create .env file:
-properties
+** Create .env file:
 Copy
-**DB_URL="jdbc:mysql://localhost:3306/clinic_management"
-**DB_USERNAME=""
-**DB_PASSWORD=""
+** DB_URL="jdbc:mysql://localhost:3306/clinic_management" **
+** DB_USERNAME="" **
+** DB_PASSWORD="" **
