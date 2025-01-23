@@ -36,3 +36,21 @@
 4. **Scene Builder** for FXML editing ([Download](https://gluonhq.com/products/scene-builder/))  
 
 ---
+
+## 📂 Project Structure
+clinic-management-system/  
+├── src/  
+│   ├── main/  
+│   │   ├── java/com/clinicmanagementsystem/  
+│   │   │   ├── controllers/      # All FXML controllers  
+│   │   │   ├── models/           # Data classes (Patient, Doctor, etc.)  
+│   │   │   ├── services/         # Database & business logic  
+│   │   │   └── Main.java         # Entry point  
+│   │   └── resources/  
+│   │       ├── fxml/             # All .fxml files  
+│   │       ├── css/              # Stylesheets  
+│   │       └── images/           # Icons & backgrounds  
+├── sql/                          # Database schema & scripts  
+└── pom.xml                       # Maven dependencies  
+
+
