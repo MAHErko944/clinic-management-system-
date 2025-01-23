@@ -25,7 +25,15 @@
 | **Tools**      | Scene Builder, IntelliJ/Eclipse, Maven |    
 
 ---
+## 🔌 API Endpoints
 
+| Method | Endpoint              | Description                |
+|--------|-----------------------|----------------------------|
+| POST   | /api/appointments     | Create new appointment     |
+| GET    | /api/doctors/{id}     | Get doctor details         |
+| PUT    | /api/reports/{id}     | Update medical report      |
+
+---
 ## 🚀 Getting Started  
 
 ### 📋 **Prerequisites**  
