@@ -12,7 +12,7 @@
 | 🔐 Manage specialties, doctors, & appointments | 📝 Create/edit medical reports | 🗓️ Book/cancel appointments |  
 | 📊 Set appointment limits & view analytics | 🕒 View daily schedule & patient queue | 📜 View appointment history |  
 | 🛠️ Database CRUD operations | 📋 Access patient medical history | 🔐 Secure login/registration |  
-| 📈 Generate system reports | 🔔 Receive appointment notifications | ✉️ Get email/SMS reminders |  
+| 📈 Generate system reports | 🔔 Receive appointment notifications |  |  
 
 ---
 
@@ -22,8 +22,7 @@
 | **Frontend**   | JavaFX, FXML, CSS |  
 | **Backend**    | Java 17+, JDBC |  
 | **Database**   | MySQL/PostgreSQL |  
-| **Tools**      | Scene Builder, IntelliJ/Eclipse, Maven |  
-| **APIs**       | JavaMail (for notifications), Quartz Scheduler |  
+| **Tools**      | Scene Builder, IntelliJ/Eclipse, Maven |    
 
 ---
 
